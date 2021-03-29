@@ -1,10 +1,10 @@
 {
-    "name": "wwwitsourceproviders/institution",
+    "name": "wwwitsourceproviders/attendance",
     "type": "library",
     "license": "MIT",
 "autoload": {
     "psr-4": {
-        "ITSourceProviders\\Institution\\": "wwwitsourceproviders/Institution/"
+        "ITSourceProviders\\Attendance\\": "wwwitsourceproviders/Attendance/"
     }
 },
     "require": {
