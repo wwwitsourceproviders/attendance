@@ -31,6 +31,11 @@ try {
 	date('Y-m-d H:i:s'),
 	ITSourceProviders\Attendance\AttendanceState::PRESENT
    );
+   $uattendance = ITSourceProviders\Attendance\User::getAttendance(
+	'daniel@itsourceproviders.net',
+	2021,
+	2
+   );
     ITSourceProviders\Attendance\Course::addAttendance(
 	'ExpirementalHumanandSocialcbXghudrk',
 	'daniel@itsourceproviders.net',
@@ -42,6 +47,12 @@ try {
 	'daniel@itsourceproviders.net',
 	date('Y-m-d H:i:s'),
 	ITSourceProviders\Attendance\AttendanceState::PRESENT
+   );
+   $ucattendance = ITSourceProviders\Attendance\Course::getAttendance(
+	'ExpirementalHumanandSocialcbXghudrk',
+	'daniel@itsourceproviders.net',
+	2021,
+	2
    );
 } catch (Error $e) {
     echo $e->getMessage();

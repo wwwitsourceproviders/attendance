@@ -12,5 +12,9 @@ class Course {
 	\ITSourceProviders\Attendance\Config\Setting::post('/course/google/'.$google_id.'/attendance',["email"=>$email,"date"=>$date,"present"=>$state]);
     }
 
+    public static function getAttendance($course_id,$email,$year,$month){
+	return \ITSourceProviders\Attendance\Config\Setting::get('/course/'.$course_id.'/attendance/'.$email.'/get',		["year"=>$year,"month"=>$month]);
+    }
+
 }
 
